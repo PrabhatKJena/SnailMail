@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-231.5" y="-281.0">com.ebay.method.states.SnailMailState</node>
+    <node x="-500.0" y="-132.0">com.ebay.method.states.StartedSnailMailState</node>
+    <node x="256.5479736328125" y="-314.10394287109375">com.ebay.method.context.SnailMailMethodContext</node>
+    <node x="-296.5" y="25.0">com.ebay.method.states.VerifiedSnailMailState</node>
+    <node x="-122.5" y="-130.0">com.ebay.method.states.ResentSnailMailState</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.ebay.method.context.SnailMailMethodContext" target="com.ebay.method.states.VerifiedSnailMailState">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.ebay.method.states.VerifiedSnailMailState" target="com.ebay.method.states.SnailMailState">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.ebay.method.states.StartedSnailMailState" target="com.ebay.method.states.SnailMailState">
+      <point x="0.0" y="-60.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="com.ebay.method.states.StartedSnailMailState" target="com.ebay.method.context.SnailMailMethodContext">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.ebay.method.states.ResentSnailMailState" target="com.ebay.method.states.SnailMailState">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.ebay.method.context.SnailMailMethodContext" target="com.ebay.method.states.ResentSnailMailState">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.ebay.method.context.SnailMailMethodContext" target="com.ebay.method.states.SnailMailState">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.ebay.method.states.ResentSnailMailState" target="com.ebay.method.context.SnailMailMethodContext">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.ebay.method.states.VerifiedSnailMailState" target="com.ebay.method.context.SnailMailMethodContext">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.ebay.method.context.SnailMailMethodContext" target="com.ebay.method.states.StartedSnailMailState">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9960181160521596" x="5.0547943115234375" y="-81.68844604492188" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
